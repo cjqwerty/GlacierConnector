@@ -1,0 +1,19 @@
+{
+    "name" : "Federated repository with projections",
+
+    "externalSources" : {
+        "glacierfiles" : {
+            "classname" : "org.fcrepo.federation.glacierconnector.GlacierConnector",
+            
+            "localCacheDirectory" : "archives",
+            "readonly" : false,
+            "accessKey" : "accessKey here",
+			"secretKey" : "secretKey here",
+			"region" : "us-east-1",
+			"SQSQueueName":"GlacierConnector",
+			
+            "projections" : [
+                "default:/glacierVault1 => /examplevaultfordelete"  ]
+        }
+    }
+}
