@@ -150,8 +150,8 @@ public class GlacierConnector extends WritableConnector implements Pageable {
 	private static final String EXTRA_PROPERTIES_LEGACY = "legacy";
 	private static final String EXTRA_PROPERTIES_NONE = "none";
 
-	private String accessKey;// = "AKIAIHUNOBIY2TKMUPGA";
-	private String secretKey;// = "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";
+	private String accessKey;
+	private String secretKey;
 	private String endpoint;
 
 	private String localCacheDirectory;
